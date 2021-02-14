@@ -3,7 +3,7 @@
 [ "${PLUGIN_DEBUG}" = "true" ] && { set -x; env; }
 
 function show_notice()  { echo -e "\e[34m[NOTICE. $(date '+%Y/%m/%d-%H:%M:%S')]\e[39m ${1}"; }
-function show_warning() { echo -e "\e[31m[WARNING. $(date '+%Y/%m/%d-%H:%M:%S')]\e[39m ${1}" >&2; }
+function show_warning() { echo -e "\e[33m[WARNING. $(date '+%Y/%m/%d-%H:%M:%S')]\e[39m ${1}" >&2; }
 function show_error()   { echo -e "\e[31m[ERROR. $(date '+%Y/%m/%d-%H:%M:%S')]\e[39m ${1}" >&2; exit 1; }
 
 function generate_release_alias() {
